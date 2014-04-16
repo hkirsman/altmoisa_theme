@@ -1,0 +1,15 @@
+#topMenu ul li {
+	background: url(spacer.gif) no-repeat 0px 2px;
+}
+
+#goHome {
+	background: white;
+	filter: alpha(opacity=0.1); /* internet explorer */
+}
+
+hr {  margin-bottom: 7px; }
+h2 { margin-bottom: 7px; }
+
+hr { border: 1px solid #E7B064; }
+
+#news-content {  padding-right: 0; }

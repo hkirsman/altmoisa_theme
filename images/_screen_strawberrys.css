@@ -1,0 +1,16 @@
+#main_menu{
+	background: url(menu3.gif);
+}
+#main_menu a { color: white; }
+
+h2 { color: #5D5D5D; font-size: 16px; font-weight: bold; margin: 10px 0 3px 0; padding: 0; }
+
+#main-content p { margin:0.2em 0; }
+#main-content ul { list-style-type:disc }
+
+.lavalampnoimage li.back {
+	border-bottom: 2px solid white;
+}
+
+
+#header #header_imgs  { width:950px; }

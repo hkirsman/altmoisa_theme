@@ -1,0 +1,245 @@
+body {
+     background: #FFFF99;
+     margin: 0;
+     color: #000;
+     text-align: justify;
+     font: normal normal normal 75% verdana, tahoma, arial, sans-serif;
+     line-height: 2;
+}
+div.header {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 150px;
+     background: #93a9d5 url("../images/header_sinine.jpg") repeat-x;
+     border-bottom: 2px solid #ff6600;
+}
+div.header2 {
+     position: absolute;
+     top: 147px;
+     left: 0;
+     width: 300px;
+     height: 60px;
+     background: transparent url("../images/header.jpg");
+}
+div.header3 {
+     position: absolute;
+     top: 150px;
+     left: 0;
+     width: 100%;
+     height: 38px;
+     background: #ff9900;
+     border-bottom: 2px solid #ff6600;
+}
+div.moduletablepaik {
+     position: absolute;
+     left: 300px;
+     bottom: 0;
+     text-align: left;
+     line-height: 1;
+     color: #B9251B;
+     font-weight: 600;
+     font-size: 90%;
+}
+div.moduletablepaik:first-line {
+     font: normal 500 normal 225% "monotype corsiva", cursive;
+}
+div.moduletablelogo img {
+     position: absolute;
+     top: 70px;
+     left: 25px;
+}
+img.joonistus {
+     position: absolute;
+     top: 35px;
+     right: 0px;
+}
+
+div.lingid {
+     position: absolute; 
+     top: 5px;
+     width: 100%;
+     text-align: center;     
+}
+.lingid a {
+     color: #333;
+}
+.lingid a:hover {
+     color: #b9251b;
+}
+.lingid1 a {
+     font-weight: 550;
+     font-size: 90%;
+     text-transform: uppercase;
+}
+.lingid2 a {
+     font-weight: 400;
+     font-size: 75%;
+}
+
+h1 {
+     font: normal normal normal 200% "monotype corsiva", cursive;
+     color: #000;
+     text-align: left;
+     margin: 0 0 1em 250px;
+}
+h2 {
+     font: normal bold normal 150% verdana, tahoma, arial, sans-serif;
+     color: #ff6600;
+     text-align: left;
+     margin: 0 0 1em 10px;
+}
+.menyy h2 {
+     margin-top: 1em;
+}
+h3 {
+     font: normal normal bold 110% verdana, tahoma, arial, sans-serif;
+     color: #000;
+     text-align: left;
+     margin: 1em 0 0 10px;
+}
+h4 {
+     font: normal normal bold 100% verdana, tahoma, arial, sans-serif;
+     color: #000;
+     text-align: left;
+     margin: 1em 0 0 10px;
+}
+.leading h1, .uudised h1 {
+     margin-top: 1em;
+}
+a {
+     color: #3655B1;
+     text-decoration: none;
+     font-weight: bold;
+}
+a:hover {
+     color: #5AB4F8;
+}
+div.uudised {
+     float: right;
+     margin: 0 5px 20px 25px;
+     width: 295px;
+     min-height: 500px;
+     background: transparent url("../images/top.jpg") no-repeat scroll top left;
+}
+div.uudised div {
+     background: transparent url("../images/taust.jpg") repeat-x scroll top left;
+     border-left: 2px solid #ff6600;
+     border-right: 2px solid #ff6600;
+     border-bottom: 2px solid #ff6600;
+}
+div.uudised p {
+     margin: 0 10px 2em 15px;
+     line-height: 1.5;
+     text-align: left;
+}
+div.uudised p:before, div.uudised p:after {
+     content: url("../images/spacer.jpg");
+}
+div.moduletablekontakt {
+     width: 100%;
+     height: 3em;
+     text-align: center;
+     font-size: 75%;
+     background: transparent url("../images/taust2.jpg") repeat-x scroll top left;
+     border-top: 2px solid #ff6600;
+     clear: both;
+}
+div.sisu {
+     position: absolute;
+     top: 225px;
+     left: 0;
+     right: 0;
+}
+.sisu p {
+     margin: 20px 50px 2em 5px;
+}
+p.paisefoto {
+     margin: 0 0 2em 225px;
+     text-align: left;
+}
+.leading p {
+     margin: 0 75px 2em 50px;
+}
+.moduletablekontakt p {
+     margin: 3px 0 3px 0;
+}
+.leading p.paisefoto, .leading h1, .uudised h1 {
+     margin-left: 0;
+     text-align: center;
+}
+.sisu img {
+     border: 2px solid #ff6600;
+}
+div.lingid3 {
+    float: left;
+    width: 197px;
+    margin-left: 5px;
+    background: transparent url("../images/top2.jpg") no-repeat scroll top left;
+}
+div.lingid3 div {
+    background: transparent url("../images/taust2.jpg") repeat-x scroll top left;
+    margin-top: 17px;
+    border-left: 1px solid #ff6600;
+    border-right: 1px solid #ff6600;
+    border-bottom: 2px solid #ff6600;
+}
+.lingid3 ul {
+    list-style-image: url("../images/dot2.png");
+}
+.lingid3 a {
+    font-weight: 550;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+li.parent ul {
+    position: relative;
+    right: 25px;
+}
+li.parent ul a {
+    font-size: 75%;
+    text-transform: none;
+}
+.tsitaat p {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #b9251b;
+    line-height: 1;
+    text-align: left;
+    font: italic normal 500 125% arial, sans-serif;
+}
+p.autor {
+    color: #000;
+    font: normal normal 900 90% arial, sans-serif;
+    margin-bottom: 1em;
+}
+table {
+    margin: 0 5px 2em 225px;
+}
+.lingid1 table, .lingid2 table {
+    margin: 0;
+}
+td {
+    vertical-align: top;
+}
+tr.tume {
+    background: transparent url("../images/taust3.jpg") repeat-x scroll top left;
+}
+table.hinnakiri, table.menyy {
+    margin: 0 5px 1em 5px;
+}
+.hinnakiri td {
+    width: 200px;
+    text-align: left;
+}
+.menyy td {
+    width: 500px;
+    text-align: left;
+}
+td.hinnakiri2 {
+    width: 350px;
+}
+vaike {
+    font-size: smaller;
+}

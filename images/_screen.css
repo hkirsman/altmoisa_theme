@@ -1,0 +1,262 @@
+/**
+* site:www.team75plus.com
+* author:Struktuur Varahaldus
+*/
+body{ line-height: 1 }
+ol,ul{ list-style: none }
+blockquote,q{ quotes: none }
+/* remember to define focus styles! */
+:focus{ outline: 0 }
+/* remember to highlight inserts somehow! */
+ins{ text-decoration: none }
+del{ text-decoration: line-through }
+/* tables still need 'cellspacing="0"' in the markup */
+table{ border-collapse: collapse; border-spacing: 0 }
+td { vertical-align: top }
+/*****Basic Elements*****/
+body{
+	background: #e7b064;
+	/*background: white;*/
+	color: #595959;
+	font: "Trebuchet MS",Verdana,Helvetica,sans-serif;
+	margin: 15px 0;
+	padding: 0;
+}
+a{ color: #5286D7; text-decoration: none }
+a:hover{ text-decoration: underline }
+/*****Generic Classes*****/
+.clear{ clear: both }
+.error{ color: #FF0000 }
+.image_right { float: right }
+.colborder { border-right: 1px solid #abbedb }
+.last { border: 0 }
+.alt {
+	color: #666666;
+	color: #b2261e;
+	font-family: "Warnock Pro","Goudy Old Style","Palatino","Book Antiqua",Georgia,serif;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+}
+hr { height: 1px; background: #E7B064; }
+/*****Basic Layout*****/
+.container {
+	background: #fff url(container_top.gif) no-repeat top;
+	padding: 10px;
+	position: relative;
+}
+/*****Header*****/
+#header{
+	height: 194px;
+	margin-top: 4px;
+	position: relative;
+	text-align: right;
+	width: 950px
+}
+#header #header_imgs{ float: right; height: 194px; width: 800px }
+#header img.logo{ left: 0; position: absolute; z-index: 99 }
+#fb {position:absolute;top: 20px; right: 20px; z-index: 999;}
+#blog {position:absolute;top: 20px; right: 62px; z-index: 999;}
+#goHome {
+	left: 0;
+	display: block;
+	height: 195px;
+	position: absolute;
+	width: 250px;
+	z-index: 100;
+}
+#topMenu {
+	right: 6px;
+	display: block;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+}
+#topMenu ul {
+	float: right;
+	margin: 5px 0px 5px 10px;
+	padding: 0;
+}
+#topMenu ul li {
+	background: url(spacer.gif) no-repeat 0px 4px;
+	float: left;
+	padding-left: 5px;
+}
+#topMenu ul li.first { background: none; }
+#topMenu ul a {
+	padding-right: 5px;
+	color: #141412;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;}
+#langMenu {
+	left:10px;
+	position:absolute;
+	top:5px;
+}
+#langMenu * { margin: 0; padding: 0; }
+#langMenu .rawimages img  { border:medium none;
+margin:2px; }
+/*****Main menu*****/
+#main_menu{
+	background: url(menu2.gif);
+	height: 50px;
+	margin-top:1px;
+	width: 950px
+}
+#main_menu .lavalampnoimage {
+	height: 50px;
+	margin-left: 20px;
+	overflow: hidden;
+	position: relative;
+	width: 950px
+}
+#main_menu .current a {
+  text-decoration: underline;
+}
+.lavalampnoimage li { padding-top: 10px }
+.lavalampnoimage li.back {
+	border-bottom: 2px solid #acbedb; /*background: #E6E8EA;*/
+	height: 30px;
+	position: absolute;
+	z-index: 8
+}
+.lavalampnoimage li a {
+	color: #cddaec;
+	display: block;
+	float: left;
+	font: bold 12px "Trebuchet MS",Verdana;;
+	height: 30px;
+	letter-spacing: 0;
+	margin: auto 12px;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	top: 7px
+}
+.lang_ru-ru .lavalampnoimage li a {
+	font-size: 11px;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+.lang_fi-fi .lavalampnoimage li a {
+  font-size: 10px;
+  margin: auto 10px;
+}
+.lavalampnoimage li { float: left; list-style: none }
+.lavalampnoimage li a:hover, .lavalampnoimage li a:active, .lavalampnoimage li a:visited { border: none }
+/*****Main content*****/
+#main-content{
+	color: #5D5D5D;
+	font: 1.2em/1.2em Trebuchet MS;
+	letter-spacing: 0;
+	text-align: left;
+	text-decoration: none;
+	word-spacing: normal;
+	line-height: 1.6em;
+}
+#main-content p{ margin: 0.9em 0 }
+#main-content h1{ color: #5D5D5D; font-size: 1.8em }
+/* gallery */
+#jcarousellitedemo .carousel {
+	margin: 0 0 20px 10px;
+	padding: 10px 0 0 0;
+	position: relative
+}
+#jcarousellitedemo .digg { left: 610px; position: absolute; top: 110px }
+#jcarousellitedemo .main { margin-left: 40px }
+#jcarousellitedemo .demo em {
+	color: #FF3300;
+	font-size: 60%;
+	font-style: normal;
+	font-weight: bold
+}
+#jcarousellitedemo .carousel button { }
+#jcarousellitedemo .carousel a.prev, #jcarousellitedemo .carousel a.next {
+	background: url("imageNavLeft.gif") left 60px no-repeat;
+	display: block;
+	float: left;
+	height: 143px;
+	text-decoration: none;
+	width: 30px
+}
+#jcarousellitedemo .carousel a.next {
+	background: url("imageNavRight.gif") right 60px no-repeat
+}
+#jcarousellitedemo .carousel a.next:hover {
+	background: url("imageNavRightHover.gif") right 60px no-repeat
+}
+#jcarousellitedemo .carousel a.prev:hover {
+	background: url("imageNavLeftHover.gif") left 60px no-repeat
+}
+#jcarousellitedemo .carousel a:hover, #jcarousellitedemo .carousel a:active { border: none; outline: none }
+#jcarousellitedemo .carousel .jcarousellite {
+	float: left;
+	left: -5000px;
+	position: relative;
+	visibility: hidden
+}
+#jcarousellitedemo .carousel ul { margin: 0 }
+#jcarousellitedemo .carousel li img,
+#jcarousellitedemo .carousel li p {
+	background: #FFFFFF;
+	height: 118px;
+	margin: 10px;
+	width: 160px
+}
+#jcarousellitedemo .widget img { cursor: pointer }
+#jcarousellitedemo .mid { height: 300px; margin-left: 80px; width: 400px }
+#jcarousellitedemo .vertical { margin-left: 170px }
+#jcarousellitedemo .vertical .jcarousellite { }
+#jcarousellitedemo .imageslider li img,
+#jcarousellitedemo .imageslider li p,
+#jcarousellitedemo .imagesliderext li img ,
+#jcarousellitedemo .imagesliderext li p { height: 300px; width: 400px }
+/*****News content*****/
+#news-content{
+	color: #444444;
+	font: 1.0em/1.5em Trebuchet MS;
+	letter-spacing: 0;
+	text-align: left;
+	text-decoration: none;
+	word-spacing: normal
+}
+#news-content .news_title { font-size: 1.5em }
+/*****Footer*****/
+#footer{ text-align: center }
+#footer p { margin: 0; }
+/*****Etc*****/
+#main-content, #news-content { padding:1em 3.3em 1em 0.6em; vertical-align: top }
+#topMenu ul a.strawberryparty { color: #B2261E; }
+#main_table { margin: 2em; }
+#main_table table { width: auto }
+#news-content { width: 213px !important;  back}
+.menu li { text-transform: uppercase; }
+.menu li li { text-transform: none; }
+.menu #current > a { text-decoration: underline }
+
+
+BODY#strawberrys div.uudised {
+	float: right;
+	width: 287px;
+	font-size: 12px;
+	clear: right;
+	padding-left: 20px;
+}
+
+BODY#strawberrys div.pildid {
+	float: right;
+	width: 287px;
+	font-size: 12px;
+	clear: right;
+	margin-top: 5px;
+	padding-left: 20px;
+}
+BODY#strawberrys img.uudised { display: none; }
+BODY#strawberrys hr { height: 1px; background: #E7B064; margin: 8px 0; }
+BODY#strawberrys .thickbox { margin-right: 10px; }
+
