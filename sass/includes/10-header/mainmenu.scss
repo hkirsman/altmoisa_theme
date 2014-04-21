@@ -1,0 +1,84 @@
+
+
+
+#main_menu {
+  display: none;
+}
+
+
+
+@media (min-width: $screen-md-min) {
+  #main_menu {
+    background: url(../images/menu2.gif);
+    display: block;
+    height: 50px;
+    margin-top:1px;
+    width: 950px;
+
+    .lavalampnoimage {
+      height: 50px;
+      list-style-type: none;
+      margin: 0 0 0 20px;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+      width: 950px;
+    }
+
+    .current a {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    li {
+      float: left;
+      list-style: none;
+      padding-top: 10px;
+
+      &.back {
+        border-bottom: 2px solid #acbedb; /*background: #E6E8EA;*/
+        height: 30px;
+        position: absolute;
+        z-index: 8;
+      }
+
+      a:hover,
+      a:active,
+      a:visited {
+        border: none;
+      }
+
+      a {
+        color: #cddaec;
+        display: block;
+        float: left;
+        font: bold 12px "Trebuchet MS",Verdana;;
+        height: 30px;
+        letter-spacing: 0;
+        margin: auto 12px;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        top: 7px;
+        z-index: 10;
+
+        .lang_ru-ru & {
+          font-size: 11px;
+          margin-left: 9px;
+          margin-right: 9px;
+        }
+
+        .lang_fi-fi & {
+          font-size: 10px;
+          margin: auto 10px;
+        }
+      }
+    }
+  }
+}

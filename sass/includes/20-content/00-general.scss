@@ -1,0 +1,88 @@
+
+
+
+/*****Main content*****/
+#main-content{
+  color: #5D5D5D;
+  // font: 1.2em/1.2em Trebuchet MS;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  text-align: left;
+  text-decoration: none;
+  word-spacing: normal;
+}
+
+.contentheading {
+  margin-top: 0;
+}
+// #main-content p{ margin: 0.9em 0 }
+// #main-content h1{ color: #5D5D5D; font-size: 1.8em }
+
+/* gallery */
+#jcarousellitedemo .carousel {
+  margin: 0 0 20px 10px;
+  padding: 10px 0 0 0;
+  position: relative
+}
+#jcarousellitedemo .digg { left: 610px; position: absolute; top: 110px }
+#jcarousellitedemo .main { margin-left: 40px }
+#jcarousellitedemo .demo em {
+  color: #FF3300;
+  font-size: 60%;
+  font-style: normal;
+  font-weight: bold
+}
+#jcarousellitedemo .carousel button { }
+#jcarousellitedemo .carousel a.prev, #jcarousellitedemo .carousel a.next {
+  background: url("imageNavLeft.gif") left 60px no-repeat;
+  display: block;
+  float: left;
+  height: 143px;
+  text-decoration: none;
+  width: 30px
+}
+#jcarousellitedemo .carousel a.next {
+  background: url("imageNavRight.gif") right 60px no-repeat
+}
+#jcarousellitedemo .carousel a.next:hover {
+  background: url("imageNavRightHover.gif") right 60px no-repeat
+}
+#jcarousellitedemo .carousel a.prev:hover {
+  background: url("imageNavLeftHover.gif") left 60px no-repeat
+}
+#jcarousellitedemo .carousel a:hover, #jcarousellitedemo .carousel a:active { border: none; outline: none }
+#jcarousellitedemo .carousel .jcarousellite {
+  float: left;
+  left: -5000px;
+  position: relative;
+  visibility: hidden
+}
+#jcarousellitedemo .carousel ul { margin: 0 }
+#jcarousellitedemo .carousel li img,
+#jcarousellitedemo .carousel li p {
+  background: #FFFFFF;
+  height: 118px;
+  margin: 10px;
+  width: 160px
+}
+#jcarousellitedemo .widget img { cursor: pointer }
+#jcarousellitedemo .mid { height: 300px; margin-left: 80px; width: 400px }
+#jcarousellitedemo .vertical { margin-left: 170px }
+#jcarousellitedemo .vertical .jcarousellite { }
+#jcarousellitedemo .imageslider li img,
+#jcarousellitedemo .imageslider li p,
+#jcarousellitedemo .imagesliderext li img ,
+#jcarousellitedemo .imagesliderext li p { height: 300px; width: 400px }
+/*****News content*****/
+#news-content{
+  color: #444444;
+  font: 1.0em/1.5em Trebuchet MS;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+  word-spacing: normal
+}
+#news-content .news_title {
+  font-size: 1.5em;
+  margin-top: 13px;
+}

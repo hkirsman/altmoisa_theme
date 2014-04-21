@@ -1,0 +1,37 @@
+// Bootstrap library.
+@import 'bootstrap.scss';
+
+// Custom mixins.
+// @import 'mixin.scss';
+
+// Extendable classes.
+// @import 'extendables.scss';
+
+// Theme specific.
+$file: global;
+@import 'includes/**/*';
+
+
+//
+// @todo: put somewhere
+//
+BODY#strawberrys div.uudised {
+    float: right;
+    width: 287px;
+    font-size: 12px;
+    clear: right;
+    padding-left: 20px;
+}
+
+BODY#strawberrys div.pildid {
+    float: right;
+    width: 287px;
+    font-size: 12px;
+    clear: right;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+BODY#strawberrys img.uudised { display: none; }
+BODY#strawberrys hr { height: 1px; background: #E7B064; margin: 8px 0; }
+BODY#strawberrys .thickbox { margin-right: 10px; }
+

@@ -1,0 +1,36 @@
+
+
+
+#langMenu {
+  display: none;
+}
+
+
+
+@media (min-width: $screen-sm-min) {
+  #langMenu {
+    display: block;
+    left: 10px;
+    position: absolute;
+    top: 5px;
+
+    div {
+      margin: 0;
+      padding: 0;
+    }
+
+    a,
+    img {
+      display: block;
+    }
+
+    span {
+      float: left;
+    }
+
+    .rawimages img {
+      border: medium none;
+      margin: 2px;
+    }
+  }
+}
