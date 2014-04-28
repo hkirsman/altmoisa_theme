@@ -5026,22 +5026,12 @@ img {
     width: 709px;
     z-index: 99; }
 
-#header_imgs {
-  float: right;
-  height: 146px;
-  width: 100%; }
-
-#fb {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 999; }
-
+#fb,
 #blog {
-  position: absolute;
-  top: 20px;
-  right: 62px;
-  z-index: 999; }
+  display: none; }
+
+#header_imgs {
+  display: none; }
 
 #goHome {
   display: block;
@@ -5066,10 +5056,25 @@ img {
       z-index: 99; }
 
   #header_imgs {
+    display: block;
+    float: right;
     height: 146px;
     width: 600px; }
     #header_imgs img {
-      height: auto; } }
+      height: auto; }
+
+  #fb,
+  #blog {
+    display: block;
+    position: absolute;
+    top: 20px;
+    z-index: 999; }
+
+  #fb {
+    right: 20px; }
+
+  #blog {
+    right: 62px; } }
 @media (min-width: 992px) {
   #header {
     height: 194px;
@@ -5101,14 +5106,53 @@ img {
       border: medium none;
       margin: 2px; } }
 #main_menu {
-  display: none; }
+  background-color: #03013A;
+  padding: 10px 0; }
+  #main_menu .current a {
+    text-decoration: underline; }
+  #main_menu ul {
+    margin: 0; }
+  #main_menu li {
+    list-style: none; }
+    #main_menu li.back {
+      border-bottom: 2px solid #acbedb;
+      /*background: #E6E8EA;*/
+      height: 30px;
+      position: absolute;
+      z-index: 8; }
+    #main_menu li a:hover,
+    #main_menu li a:active,
+    #main_menu li a:visited {
+      border: none; }
+    #main_menu li a {
+      color: #cddaec;
+      display: block;
+      font: bold 12px "Trebuchet MS",Verdana;
+      letter-spacing: 0;
+      outline: none;
+      overflow: hidden;
+      padding: 10px 0;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      z-index: 10; }
+      #main_menu li a:focus, #main_menu li a:hover {
+        color: #fff; }
+      .lang_ru-ru #main_menu li a {
+        font-size: 11px;
+        margin-left: 9px;
+        margin-right: 9px; }
+      .lang_fi-fi #main_menu li a {
+        font-size: 10px;
+        margin: auto 10px; }
 
 @media (min-width: 992px) {
   #main_menu {
     background: url(../images/menu2.gif);
-    display: block;
     height: 50px;
     margin-top: 1px;
+    padding: 0;
     width: 950px; }
     #main_menu .lavalampnoimage {
       height: 50px;
@@ -5118,47 +5162,15 @@ img {
       padding: 0;
       position: relative;
       width: 950px; }
-    #main_menu .current a {
-      text-decoration: underline; }
-    #main_menu ul {
-      margin: 0; }
     #main_menu li {
       float: left;
-      list-style: none;
       padding-top: 10px; }
-      #main_menu li.back {
-        border-bottom: 2px solid #acbedb;
-        /*background: #E6E8EA;*/
-        height: 30px;
-        position: absolute;
-        z-index: 8; }
-      #main_menu li a:hover,
-      #main_menu li a:active,
-      #main_menu li a:visited {
-        border: none; }
       #main_menu li a {
-        color: #cddaec;
-        display: block;
         float: left;
-        font: bold 12px "Trebuchet MS",Verdana;
         height: 30px;
-        letter-spacing: 0;
         margin: auto 12px;
-        outline: none;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        top: 7px;
-        z-index: 10; }
-        .lang_ru-ru #main_menu li a {
-          font-size: 11px;
-          margin-left: 9px;
-          margin-right: 9px; }
-        .lang_fi-fi #main_menu li a {
-          font-size: 10px;
-          margin: auto 10px; } }
+        padding: 0;
+        top: 7px; } }
 #topMenu {
   display: none; }
 
@@ -5318,5 +5330,3 @@ BODY#strawberrys hr {
 
 BODY#strawberrys .thickbox {
   margin-right: 10px; }
-
-/*# sourceMappingURL=global.css.map */

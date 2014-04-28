@@ -22,14 +22,15 @@
   }
 }
 
-#header_imgs {
-  float: right;
-  height: 146px;
-  width: 100%;
+#fb,
+#blog {
+  display: none;
 }
 
-#fb {position:absolute;top: 20px; right: 20px; z-index: 999;}
-#blog {position:absolute;top: 20px; right: 62px; z-index: 999;}
+#header_imgs {
+  display: none;
+}
+
 #goHome {
   display: block;
   height: 195px;
@@ -59,12 +60,30 @@
   }
 
   #header_imgs {
+    display: block;
+    float: right;
     height: 146px;
     width: 600px;
 
     img {
       height: auto;
     }
+  }
+
+  #fb,
+  #blog {
+    display: block;
+    position: absolute;
+    top: 20px;
+    z-index: 999;
+  }
+
+  #fb {
+    right: 20px;
+  }
+
+  #blog {
+    right: 62px;
   }
 }
 
